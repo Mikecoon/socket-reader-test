@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="./node_modules/socket.io-client/dist/socket.io.js"></script>
+	<script>
+
+		// Создаем подключение к серверу
+	  var socket = io('http://localhost:3000');
+
+	  // Обработка входящего сообщения
+	  socket.on('data', function(msg){
+	    console.log(msg);
+	  });
+	
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
